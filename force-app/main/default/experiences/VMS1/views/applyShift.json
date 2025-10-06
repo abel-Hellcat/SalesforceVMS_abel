@@ -1,0 +1,54 @@
+{
+  "appPageId" : "07f4240a-9f18-436c-b802-ba73a1389dae",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "dd628804-3073-4fa3-9050-639aed07dcd2",
+  "label" : "Apply Shift",
+  "regions" : [ {
+    "id" : "8b3cdb37-afb0-4841-b9e0-ebe4d848a470",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "direction" : "ltr",
+        "display" : "Display OmniScript on page",
+        "inlineVariant" : "brand",
+        "language" : "English",
+        "subType" : "ShiftSignUp",
+        "theme" : "lightning",
+        "type" : "Volunteer"
+      },
+      "componentName" : "runtime_omnistudio:omniscript",
+      "id" : "5394b595-b0dc-4e11-93fb-89ae5eb4f8b1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1a209720-1fe8-4fa4-94eb-28c0506ede3a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3e7654e4-d723-4275-9859-1da4cf487f86",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Apply Shift"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "face030f-3fe7-45d3-b618-221591a8be39",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "92bc7aef-b2da-4196-bfce-7a84f386485e",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-apply-shift"
+}

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;omniscriptId&quot; : &quot;0jNf6000000Gb0PEAS&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Volunteer&quot;,
+  &quot;subType&quot; : &quot;ShiftSignUp&quot;,
+  &quot;sId&quot; : &quot;0jNf6000000Gb0PEAS&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;LanguageCode&quot; : &quot;en_US&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2025-10-05T07:16:56.082Z&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Asia/Kolkata&quot;,
+  &quot;userTimeZone&quot; : &quot;330&quot;,
+  &quot;userCurrencyCode&quot; : &quot;INR&quot;,
+  &quot;userName&quot; : &quot;abeldavid131999-c04s@force.com&quot;,
+  &quot;userId&quot; : &quot;005f6000002IHXVAA4&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNf6000000Gb0PEAS&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;ProgramId&quot; : &quot;701f600000GjLByAAN&quot;,
+  &quot;userContactId&quot; : &quot;003f6000002s0I3AAI&quot;,
+  &quot;AvailableShifts&quot; : {
+    &quot;SelectedShift&quot; : &quot;a0Nf6000008yk8DEAQ&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRCreateVolunteerHour</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>TRUE</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9614d552-7d4a-4f6f-a29c-195c92134c51</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EligibilityChecked__c</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>58e2f412-f9a6-4300-94fc-fb9ab369b726</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>todayDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>c844c833-fc46-43d2-81e9-1387e282a38d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e42627d1-e204-419b-854a-f0117dbeb1dd</globalKey>
+        <inputFieldName>AvailableShifts:SelectedShift</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Volunteer_Shift__c</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Registered</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9d38d13f-7468-4445-b4e0-b9f1da19c502</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status__c</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4210fe5a-8fcd-40b2-87db-879ba9a556a4</globalKey>
+        <inputFieldName>todayDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RegistrationDate__c</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Portal</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9cfdb0d1-bc2f-4fbc-aea0-1390b9650d8e</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ApplicationSource__c</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>99d6fab7-037d-410a-a3ca-51d3ea29e452</globalKey>
+        <inputFieldName>userContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRCreateVolunteerHour</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Volunteer__c</outputFieldName>
+        <outputObjectName>Volunteer_Hour__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRCreateVolunteerHour_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

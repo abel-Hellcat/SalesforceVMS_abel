@@ -1,0 +1,50 @@
+{
+  "appPageId" : "07f4240a-9f18-436c-b802-ba73a1389dae",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "9b901a49-b1bf-4914-bcd7-abcf2764b40e",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "226e5537-1753-415e-a223-27951bc485fb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flexcardName" : "VolunteerProgramsCard",
+        "objectApiName" : "",
+        "recordId" : ""
+      },
+      "componentName" : "runtime_omnistudio:flexcard",
+      "id" : "ec0f23cf-acf6-4135-b5b5-50f04b522948",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7e69e86f-1e10-423e-a84b-ea96520fa24d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "058ad823-33cc-4541-ae72-b640b6fbca1f",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d77dd100-fbd9-4b4f-b7be-b246bfca9a31",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "89821c69-a8a5-41fe-9bb6-1e7712707b59",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}
